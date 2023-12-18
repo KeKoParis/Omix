@@ -55,9 +55,10 @@
     padding-top: 4%;
     padding-bottom: 3%;
 }
+
 #input3 {
     padding-top: 4%;
-    padding-bottom: 3%;
+    padding-bottom: -2%;
 }
 
 #e {
@@ -108,18 +109,17 @@ input[type=submit] {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 14px;
     line-height: 24px;
-
+    margin-top: 2%;
 }
 
-#button{
-    padding-top: 2%;
+#button {
     margin: auto;
     width: 50%;
     justify-content: center;
     text-align: center;
 }
 
-#sub{
+#sub {
     padding-top: 7%;
     margin: auto;
     width: 50%;

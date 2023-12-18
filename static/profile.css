@@ -86,3 +86,8 @@ input[type=submit]{
     justify-content: center;
     text-align: center;
 }
+
+.profile-form{
+    margin:auto;
+    width: 80%;
+}

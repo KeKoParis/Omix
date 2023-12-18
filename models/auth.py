@@ -1,6 +1,5 @@
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import text
 
 from app_config import engine
 from models.dataClass.user import User
