@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/static/inputs.css">
+</head>
+<body>
+<div id="h">
+    <h1>Log In</h1>
+</div>
+
+<div id="e">
+    {% if error %}
+    <p style="color: red">{{ error }}</p>
+    {% endif %}
+</div>
+
+<div id="inputs">
+    <form method="post" action="/login">
+
+        <div id="input1">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <div class="form__group">
+                <input type="text" name="login" class="form__input" id="login" placeholder="Login" required=""/>
+                <label for="login" class="form__label">Login</label>
+            </div>
+            <hr>
+
+        </div>
+        <div>
+            <div class="form__group">
+                <input type="text" name="password" class="form__input" id="password" placeholder="Password" required=""/>
+                <label for="password" class="form__label">Password</label>
+            </div>
+            <hr>
+
+        </div>
+
+        <div id="sub">
+            <form method="post" action="/login">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </form>
+</div>
+
+<div id="button">
+    <form method="post" action="/">
+        <input type="submit" value="Main Page">
+    </form>
+</div>
+
+
+
+</body>
+</html>

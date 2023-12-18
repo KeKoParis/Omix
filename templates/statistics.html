@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/stats.css">
+    <title>Stats</title>
+</head>
+<body>
+
+<div id="main">
+    <div>
+        <h1>Statistics</h1>
+    </div>
+
+    <div id="prediction">
+        <h3>Statistics Param</h3>
+        <img src="/static/pic/chart.png" alt="prediction" width="300">
+
+    </div>
+    <div>
+        <input type="date" class="datepicker-input" lang="en">
+    </div>
+    <div>
+        <h3>Prediction Param</h3>
+        <img src="/static/pic/chart.png" alt="statistics" class="alt"
+             style="--g: 20px;--b:5px;--s: 80px;--c:#6A4A3C;" width="300">
+
+    </div>
+
+    <div id="button">
+        <form method="post" action="/menu">
+            <input type="submit" value="Menu">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 55, 5%;
+}
+
+
+.form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+
+#inputs {
+    margin: auto;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+#input1 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#input2 {
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+#input3 {
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+#e {
+    padding-top: 4%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#h {
+    text-align: center;
+    padding-top: 4%;
+    margin: auto;
+    width: 50%;
+    height: 10%;
+}
+
+p {
+    color: #685206;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 400%;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    text-shadow: none;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+
+#button{
+    padding-top: 2%;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+#sub{
+    padding-top: 7%;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
