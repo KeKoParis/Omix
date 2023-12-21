@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
     <link rel="stylesheet" href="/static/house.css">
     <title>House</title>
+
 </head>
 <body>
 
@@ -21,37 +22,51 @@
     </div>
 </div>
 
+
 <div id="houses">
 
-    <div class="form_radio">
-        <input id="radio-1" type="radio" name="radio" value="1" checked>
-        <label for="radio-1">Radio button 1</label>
-    </div>
-
-    <div class="form_radio">
-        <input id="radio-2" type="radio" name="radio" value="2">
-        <label for="radio-2">Radio button 2</label>
-    </div>
-
-    <div class="form_radio">
-        <input id="radio-3" type="radio" name="radio" value="3">
-        <label for="radio-3">Radio button 3</label>
-    </div>
+    {{buttons}}
 
 </div>
-
 
 <div id="indicators">
-    <p class="indicator">Indicator 1</p>
-    <p class="indicator">Indicator 1</p>
-    <p class="indicator">Indicator 1</p>
+    {{ indicators }}
 </div>
+
+
 
 <div id="button">
     <form method="post" action="/menu">
         <input type="submit" value="Menu">
     </form>
 </div>
+
+<script>
+function handleRadioButtonClick() {
+  // Здесь можно выполнить необходимые действия при щелчке на radio button
+  var value = this.value;
+  if (value !== 'undefined') {
+    console.log("Выбрано значение: " + value);
+
+    // Отправка GET-запроса
+    fetch('/house/radio_button?option=' + encodeURIComponent(value), {
+      method: 'GET'
+    })
+      .then(response => {
+        // Обработка ответа от сервера
+        if (response.ok) {
+          console.log('Запрос успешно отправлен');
+          location.reload(); // Перезагрузка страницы
+        } else {
+          console.log('Произошла ошибка при отправке запроса');
+        }
+      })
+      .catch(error => {
+        console.log('Произошла ошибка:', error);
+      });
+  }
+}
+</script>
 
 </body>
 </html>
